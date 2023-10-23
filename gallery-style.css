@@ -1,0 +1,190 @@
+
+.first-row-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-hero-sec-title{
+  align-self: center;
+  margin: 10rem auto;
+  align-self: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gallery-products{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.gallery-product-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-product-img{
+  width: 273px;
+  height: 273px;
+  border: solid;
+  border-radius: 20px;
+  background-color: grey;
+}
+
+.gallery-product-box p{
+  align-self: center;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.middle-row{
+  height: 544px;
+}
+
+.last-row{
+  height: 544px;
+  background-image: url(./mucem-images/last-row-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* --------------------------------More To Your taste Section Style-------------------------------- */
+
+.more-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.more-section{
+  width: 100%;
+  height: 680px;
+  background-color: #8D5A3C;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.more-title{
+  margin-bottom: 8rem;
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+.more-descri h3{
+  width: 450px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.more-descri p{
+  width: 250px;
+  margin-bottom: 3rem;
+}
+
+.more-descri button{
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #E8AC74;
+}
+
+.more-img{
+  width: 550px;
+  height: 320px;
+  background-color: grey;
+  border: solid;
+  border-radius: 50px;
+}
+
+
+
+/* ---------------------------------------------------Mobile Version Style--------------------------------------------------- */
+
+
+
+@media (max-width: 767px){
+  
+  .gallery-mobile-header{
+    width: auto;
+    height: 1985px;
+    background-image: url(./mucem-images/mobile-header-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .header-nav-container{
+    width: 100%;
+    height: 84.24px;
+  }  
+
+  .gallery-hero-sec-title{
+    font-size: 1.5rem;
+    margin: 7.5rem auto;
+  }
+
+  .first-row-section,
+  .middle-row{
+    height: 1650px;
+  }
+
+  .last-row{
+    height: 1610px;
+    background-image: url(./mucem-images/gallery-products-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  
+  }
+
+  .gallery-products{
+    row-gap: 4rem;
+  }
+
+  .more-title{
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+    font-size: 1.5rem;
+    align-self: center;
+  }
+
+  .more-container{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .more-descri h3{
+    text-align: center;
+    width: 250px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .more-descri p{
+    text-align: center;
+    width: 250px;
+    margin-bottom: 2rem;
+  }
+
+  .more-img{
+    width: 350px;
+    height: 220px;
+    border-radius: 20px;
+  }
+  
+  .more-descri button{
+    width: 125px;
+    height: 40px;
+    margin-left: 4rem;
+  }
+
+  .more-section{
+    width: 100%;
+    height: 777px;
+  }  
+}
