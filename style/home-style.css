@@ -1,0 +1,801 @@
+@keyframes ActivePage{
+  0%{color: black;}
+  25%{color: #8D5A3C;}
+  50%{color: #E8AC74;}
+  75%{color: white;}
+  100%{color: black;}
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+p,
+a,
+h1,
+h2,
+h3{
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+}
+
+.header-section{
+  width: 100%;
+  height: 975px;
+  background-image: url(../mucem-images/header-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, rgb(141, 90, 60) 0%, rgba(141, 90, 0, 0) 100%);
+}
+
+.header-nav-container{
+  width: 100%;
+  height: 84.24px;
+}
+
+.PhoneMenu,
+#phone-nav{
+  display: none;
+}
+
+.nav-bar{
+  margin-right: 2em;
+  width: 24%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar a{
+  color: black;
+  font-weight: bold;
+}
+
+.nav-bar a.active-page{
+  color: white;
+  animation: ActivePage 5s ease 0s infinite alternate;
+}
+
+.header-logo-container{
+  margin-left: 1.5em;
+  width: 70px;  
+}
+
+.header-logo-container img{
+  width: 100%;
+}
+
+.hero-sec-title{
+  position: relative;
+  top: 5em;
+  left: 3em;
+  font-size: 2rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero-sec-title{
+  width: 150px;
+}
+
+.hero-sec-title h1{
+  font-weight: 800;
+}
+
+.hero-sec-title p{
+  width: 250px;
+  font-size: 1rem;
+  margin-top: .5rem;
+}
+
+.header-img-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  row-gap: 1.5rem;
+}
+
+.hero-sec-img-left{
+  width: 404px;
+  height: 601px;
+  border: solid #8D5A3C 3px;
+  border-radius: 200px 0 0 0;
+}
+
+.hero-sec-img-left img{
+  width: 100%;
+  height: 100%;
+  border-radius: 200px 0 0 0;
+}
+
+.hero-sec-img-right{
+  width: 404px;
+  height: 601px;
+  border: solid #8D5A3C 3px;
+  border-radius: 0 0 200px 0;
+}
+
+.hero-sec-img-right img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 200px 0;
+}
+
+
+/* --------------------------------About Section Style-------------------------------- */
+
+
+.about-section{
+  width: 100%;
+  height: 967px;
+  background-color: #8D5A3C;
+}
+
+.about-sec-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.about-sec-title{
+  margin-top: 5rem;
+  margin-bottom: 6.5rem;
+  font-size: 2.5rem;
+  color: white;
+  align-self: center;
+}
+
+.about-sec-img{
+  width: 404px;
+  height: 550px;
+  border: solid #E8AC74 3px;
+  border-radius: 0 180px 0 0;
+}
+
+.about-sec-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0 180px 0 0;
+}
+
+.about-img-descri-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about-sec-descri h3{
+  font-size: 2em;
+  color: white;
+  margin-bottom: 1rem;
+  font-family: kavoon, sans-serif;
+}
+
+.about-sec-descri p{
+  font-size: 1.5em;
+  color: white;
+  width: 400px;
+  margin-bottom: 2rem;
+}
+
+.fade-in-out{
+  width: 100%;
+  height: 73px;
+  background: linear-gradient(180deg, #8D5A3C 0%, #E8AC74 100%);
+}
+
+/* --------------------------------Best sellers Section Style-------------------------------- */
+
+.best-sell-section{
+  width: 100%;
+  height: 755px;
+  background-color: #E8AC74;
+  display: flex;
+  flex-direction: column;
+}
+
+.best-sell-title{
+  margin-top: 5rem;
+  margin-bottom: 6.5rem;
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+.best-sell-products{
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 3rem;
+  justify-content: space-evenly;
+}
+
+.best-sell-product-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.best-sell-product-img{
+  width: 273px;
+  height: 273px;
+  border: solid #8D5A3C 3px;
+  border-radius: 20px;
+}
+
+.best-sell-product-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.best-sell-product-box p{
+  align-self: center;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+/* --------------------------------Product History Section Style-------------------------------- */
+
+.history-section{
+  width: 100%;
+  height: 947px;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-title{
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  font-size: 2.5rem;
+  color: #8D5A3C;
+  align-self: center;
+}
+
+.history-cards-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.history-card{
+  width: 225px;
+  height: 510px;
+  border: solid #8D5A3C 3px;
+  border-radius: 200px 200px 0 0;
+  background-color: #E8AC74;
+  transition: all 1s;
+}
+
+.history-card:hover{
+  width: 225px;
+  height: 510px;
+  border: solid #E8AC74 3px;
+  border-radius: 200px 200px 0 0;
+  background-color: #8D5A3C;
+  color: white;
+  margin-top: -2rem;
+  .product-history-descri button{
+    background-color: #E8AC74;
+    color: black;  
+  }
+  .product-card-img{
+    border: solid #E8AC74 1px;
+  }
+  
+}
+
+.product-card-img{
+  height: 185px;
+  border-radius: 200px 200px 0 0;
+  border: solid #8D5A3C 1px;
+  margin-bottom: 1.5rem;
+}
+
+.product-card-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 200px 200px 0 0;
+}
+
+.product-history-descri h3,
+.product-history-descri p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+}
+
+.product-history-descri p.small-history{
+  width: 190px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.product-history-descri button{
+  width: 140px;
+  height: 30px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 15px 0 15px 0;
+  background-color: #8D5A3C;
+  color: white;
+  transition: all 1s;
+}
+
+/* --------------------------------Contact Section Style-------------------------------- */
+
+.contact-section{
+  width: 100%;
+  height: 894px;
+  background-color: #E8AC74;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title{
+  margin-top: 5rem;
+  margin-bottom: 6.5rem;
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+.form-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-container form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container input{
+  width: 550px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.00);
+  color: white;
+  border: solid white 1px;
+  border-radius: 5px;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  transition: all .5s;
+}
+
+.form-container input:focus{
+  background-color: #8D5A3C;
+}
+
+.form-container input::placeholder{
+  color: white;
+}
+
+.form-container input.message-input{
+  height: 220px;
+}
+
+.form-container button{
+  width: 578px;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.contact-img{
+  width: 450px;
+  height: 550px;
+  border: solid #8D5A3C 3px;
+  border-radius: 10px;
+}
+
+.contact-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.fade-in-out-2{
+  width: 100%;
+  height: 73px;
+  background: linear-gradient(180deg, #E8AC74 0%, #8D5A3C 100%);
+}
+
+/* --------------------------------FAQ Section Style-------------------------------- */
+
+.faq-section{
+  width: 100%;
+  height: 1126px;
+  display: flex;
+  flex-direction: column;
+  background-color: #8D5A3C;
+  color: white;
+}
+
+.faq-title{
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+.faq-line{
+  border-top: 1.5px solid black;
+  width: 90%;
+  margin-bottom: 6rem;
+  align-self: center;
+}
+
+.questions-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.questions-container h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+}
+
+.questions-container p{
+  width: 450px;
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+  margin-left: 4rem;
+}
+
+.middle-question{
+  align-self: flex-end;
+  margin-right: 4rem;
+}
+
+/* --------------------------------Footer Section Style-------------------------------- */
+
+.footer-section{
+  background-image: url(../mucem-images/footer-bg.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.bg-dim{
+  width: 100%;
+  height: 860px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socials{
+  margin-top: 10rem;
+}
+
+.socials-info{
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.socials-info p,
+.socials-info a{
+  color: white;
+  margin-left: 4rem;
+}
+
+.copyright{
+  align-self: center;
+}
+
+
+
+/* ---------------------------------------------------Mobile Version Style--------------------------------------------------- */
+
+
+
+@media (max-width: 767px){
+  
+  .header-section{
+    width: auto;
+    height: 1133px;
+    background-image: url(../mucem-images/mobile-header-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .nav-bar{
+    display: none;
+  }
+
+  .PhoneMenu{
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 100;
+  }
+
+  #phone-nav{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    top: 200px;
+    right: 10%;
+    width: 80%;
+    height: 300px;
+    background-color: #8D5A3C;
+    border-radius: 20px;
+    box-shadow: 0 150px 200px 200px rgba(255, 255, 255, 0.662);
+  }
+
+  #phone-nav a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E8AC74;
+  }
+
+  .header-logo-container{
+    width: 60px;
+    z-index: 100;
+  }  
+
+  .hero-sec-img-left{
+    width: 228px;
+    height: 309px;
+    border-radius: 100px 0 0 0;
+  }
+
+  .hero-sec-img-left img{
+    border-radius: 100px 0 0 0;
+  }
+
+  .hero-sec-img-right{
+    width: 228px;
+    height: 309px;
+    border-radius: 0 0 100px 0;
+  }
+
+  .hero-sec-img-right img{
+    border-radius: 0 0 100px 0;
+  }
+
+  .hero-sec-title{
+    position: static;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 4rem auto;
+  }
+
+  .hero-sec-title p{
+    width: 100%;
+  }  
+
+  /* --------------About Section Style On Mobile-------------- */
+
+  .about-section{
+    width: auto;
+    height: 985px;
+  }
+
+  .about-sec-title{
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+    font-size: 1rem;
+    color: white;
+    align-self: center;
+  }
+
+  .about-img-descri-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }  
+  
+  .about-sec-img{
+    width: 228px;
+    height: 309px;
+    border-radius: 0 100px 0 0;
+    margin-bottom: 4.5em;
+  }
+
+  .about-sec-img img{
+    border-radius: 0 100px 0 0;
+  }
+
+  .about-sec-descri{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-sec-descri h3{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .about-sec-descri p{
+    font-size: .5rem;
+    color: white;
+    margin-bottom: 2rem;
+    width: 90px;
+  }
+  
+  /* --------------Best Sellers Section Style On Mobile-------------- */
+
+  .best-sell-section{
+    width: auto;
+    height: 1895px;
+  }
+
+  .best-sell-title{
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+    font-size: 1rem;
+    align-self: center;
+  }
+
+  .best-sell-products{
+    row-gap: 4rem;
+  }
+
+  /* --------------Products History Section Style On Mobile-------------- */
+
+  .history-section{
+    width: auto;
+    height: 2199px;
+  }
+
+  .history-title{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    font-size: 1rem;
+    align-self: center;
+  }
+
+  .history-cards-container{
+    flex-flow: row wrap;
+  }
+
+  .history-card{
+    margin-bottom: 12.5rem;
+  }
+
+  .history-card:hover{
+    margin-top: -2rem;
+    margin-bottom: 14.5rem;
+  }
+
+    /* --------------Contact Section Style On Mobile-------------- */
+  
+  .contact-section{
+    width: auto;
+    height: 1070px;
+  }
+  
+  .contact-title{
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+    font-size: 1rem;
+    align-self: center;
+  }
+
+  .form-container{
+    flex-flow: row wrap;
+    row-gap: 3rem;
+  }
+
+  .form-container input{
+    width: 281px;
+    height: 43px;
+    align-self: center;
+  }
+  
+  .form-container button{
+    width: 310px;
+    height: 60px;
+  }
+
+  .contact-img{
+    width: 281px;
+    height: 307px;
+    border-radius: 5px;
+  }
+  
+  /* --------------FAQ Section Style On Mobile-------------- */
+
+  .faq-section{
+    width: auto;
+    height: 890px;
+  }
+
+  .faq-title{
+    width: 80%;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    align-self: center;
+  }
+
+  .faq-line{
+    margin-bottom: 3.5rem;
+  }  
+
+  .questions-container h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+  }
+
+  .questions-container p{
+    width: 55%;
+    font-size: 1rem;
+    margin-bottom: 3.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .middle-question{
+    margin-right: 0;
+  }
+
+  /* --------------Footer Section Style On Mobile-------------- */
+
+  .bg-dim{
+    width: 100%;
+    height: 333px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .footer-content{
+    justify-content: space-evenly;
+  }
+
+  .svg-logo svg{
+    height: 1.5rem;
+  }
+
+  .socials-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;  
+  }
+
+  .socials{
+    margin-top: 5rem;
+  }
+
+  .socials-info p,
+  .socials-info a{
+    font-weight: bold;
+    font-size: .5rem;
+    color: white;
+    margin-left: 2rem;
+  }
+
+  .footer-logo img{
+    width: 100px;
+  }
+
+  .copyright{
+    font-size: .5rem;
+  }
+  
+}

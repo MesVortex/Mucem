@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mucem</title>
-  <link rel="stylesheet" href="./home-style.css">
-  <link rel="stylesheet" href="./gallery-style.css">
+  <link rel="stylesheet" href="./style/home-style.css">
+  <link rel="stylesheet" href="./style/gallery-style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;800&family=Kavoon&display=swap" rel="stylesheet">
@@ -14,12 +14,20 @@
   <header class="header-section gallery-mobile-header">
     <nav class="header-nav-container">
       <div class="header-logo-container">
-        <img src="" alt="logo">
+        <img src="./mucem-images/header-logo.png" alt="logo">
       </div>
       <div class="nav-bar">
           <a href="./index.html">Home</a>
-          <a href="./Gallery.html">Gallery</a>
+          <a href="./Gallery.html" class="active-page">Gallery</a>
           <a href="./Workshop.html">Workshop</a>
+      </div>
+      <div class="PhoneMenu">
+        <a onclick="ShowMenu()"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></a>
+      </div>
+      <div id="phone-nav">
+        <a href="./index.html">Home</a>
+        <a href="./Gallery.html">Gallery</a>
+        <a href="./Workshop.html">Workshop</a>
       </div>
     </nav>
     <section class="first-row-section">
@@ -29,27 +37,27 @@
       <div class="gallery-products">
         <div class="gallery-product-box">
           <div class="gallery-product-img">
-            <img src="" alt="Tajine">
+            <img src="./mucem-images/decorated-plate.jpg" alt="Tajine">
           </div>
-          <p>Tajine</p>
+          <p>Decorated Plate</p>
         </div>
         <div class="gallery-product-box">
           <div class="gallery-product-img">
-            <img src="" alt="Tajine">
+            <img src="./mucem-images/tagine-history.jpg" alt="Tajine">
           </div>
-          <p>Tajine</p>
+          <p>Tagine</p>
         </div>
         <div class="gallery-product-box">
           <div class="gallery-product-img">
-            <img src="" alt="Tajine">
+            <img src="./mucem-images/zlafa.jpg" alt="Tajine">
           </div>
-          <p>Tajine</p>
+          <p>bowl (Zlafa)</p>
         </div>
         <div class="gallery-product-box">
           <div class="gallery-product-img">
-            <img src="" alt="Tajine">
+            <img src="./mucem-images/Tagine3.jpg" alt="Tajine">
           </div>
-          <p>Tajine</p>
+          <p>small tagine (decoration)</p>
         </div>
       </div>
     </section>
@@ -58,55 +66,55 @@
     <div class="gallery-products">
       <div class="gallery-product-box">
         <div class="gallery-product-img">
-          <img src="" alt="Tajine">
+          <img src="./mucem-images/zlayaf-big.jpg" alt="Tajine">
         </div>
-        <p>Tajine</p>
+        <p>bid bowls (zlayaf)</p>
       </div>
       <div class="gallery-product-box">
         <div class="gallery-product-img">
-          <img src="" alt="Tajine">
+          <img src="./mucem-images/mla7a.jpg" alt="Tajine">
         </div>
-        <p>Tajine</p>
+        <p>Salt Distributor (mlaha)</p>
       </div>
       <div class="gallery-product-box">
         <div class="gallery-product-img">
-          <img src="" alt="Tajine">
+          <img src="./mucem-images/tabssil.jpg" alt="Tajine">
         </div>
-        <p>Tajine</p>
+        <p>Mkhfiya</p>
       </div>
       <div class="gallery-product-box">
         <div class="gallery-product-img">
-          <img src="" alt="Tajine">
+          <img src="./mucem-images/mini-tbassl.jpg" alt="Tajine">
         </div>
-        <p>Tajine</p>
+        <p>Small Plates</p>
       </div>
     </div>
   </section>
   <section class="last-row">
     <div class="gallery-products">
       <div class="gallery-product-box">
-        <div class="gallery-product-img">
-          <img src="" alt="Tajine">
+        <div class="gallery-product-img last-row-img">
+          <img src="./mucem-images/plates.jpg" alt="Tajine">
         </div>
-        <p>Tajine</p>
+        <p>Plates</p>
       </div>
       <div class="gallery-product-box">
-        <div class="gallery-product-img">
-          <img src="" alt="Tajine">
+        <div class="gallery-product-img last-row-img">
+          <img src="./mucem-images/tajine-collection.jpg" alt="Tajine">
         </div>
-        <p>Tajine</p>
+        <p>Tagine</p>
       </div>
       <div class="gallery-product-box">
-        <div class="gallery-product-img">
-          <img src="" alt="Tajine">
+        <div class="gallery-product-img last-row-img">
+          <img src="./mucem-images/old-vases.jpg" alt="Tajine">
         </div>
-        <p>Tajine</p>
+        <p>Vases</p>
       </div>
       <div class="gallery-product-box">
-        <div class="gallery-product-img">
-          <img src="" alt="Tajine">
+        <div class="gallery-product-img last-row-img">
+          <img src="./mucem-images/others.jpg" alt="Tajine">
         </div>
-        <p>Tajine</p>
+        <p>Others</p>
       </div>
     </div>
   </section>
@@ -120,8 +128,10 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci dui, ornare id lacinia efficitur, cursus in arcu.</p>
         <button>Order Now</button>
       </div>
-      <div class="more-img">
-        <img src="" alt="tbassle">
+      <div>
+        <iframe class="more-sec-vid"
+        src="https://www.youtube.com/embed/xj95Ph-L97U">
+        </iframe>
       </div>
     </div>
   </section>
@@ -165,5 +175,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./javascript/phone-nav.js"></script>
+
 </body>
 </html>

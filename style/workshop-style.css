@@ -1,0 +1,162 @@
+.workshop-header-section{
+  width: 100%;
+  height: 450px;
+  background-color: #E8AC74;
+}
+
+.Workshop-hero-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.workshop-hero-sec-title{
+  align-self: center;
+  margin-top: 7rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.workshop-hero-sec-descri{
+  align-self: center;
+  text-align: center;
+  width: 300px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* --------------------------------Sign up Section Style-------------------------------- */
+
+
+.signup-section{
+  width: 100%;
+  height: 924px;
+  background-color: #8D5A3C;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-title{
+  margin-top: 5rem;
+  margin-bottom: 6.5rem;
+  font-size: 2.5rem;
+  width: 600px;
+  color: white;
+  align-self: center;
+  text-align: center;
+}
+
+.workshop-form-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.workshop-form-container form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.workshop-form-container input{
+  width: 450px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.00);
+  color: white;
+  border: none;
+  border-bottom: solid black 1.5px;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  transition: all .5s;
+}
+
+.workshop-form-container input::placeholder{
+  color: rgb(205, 203, 203);
+}
+
+.workshop-form-container input:focus{
+  outline: 0;
+}
+
+.workshop-form-container button{
+  width: 475px;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-top: 3.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+.workshop-form-container p{
+  color: red;
+  display: none;
+}
+
+.coming-soon-img{
+  width: 528px;
+  height: 475px;
+  border: solid #E8AC74 3px;
+  border-radius: 50px 0 50px 0;
+}
+
+.coming-soon-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px 0 50px 0;
+}
+
+
+/* ---------------------------------------------------Mobile Version Style--------------------------------------------------- */
+
+@media (max-width: 767px){
+
+  .workshop-header-section{
+    width: 100%;
+    height: 420px;
+  }  
+
+  .workshop-hero-sec-title{
+    font-size: 1.5rem;
+  }
+
+  .workshop-hero-sec-descri{
+    font-size: 1rem;
+    width: 200px;
+  }
+
+  /* --------------Sign Up Section Style On Mobile-------------- */
+
+  .signup-section{
+    width: 100%;
+    height: 750px;
+  }  
+
+  .signup-title{
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+    font-size: 1rem;
+    width: 250px;
+    align-self: center;
+  }
+
+  .workshop-form-container input{
+    width: 281px;
+    height: 43px;
+    align-self: center;
+  }
+
+  .workshop-form-container button{
+    width: 310px;
+    height: 60px;
+  }
+
+  .coming-soon-img{
+    display: none;
+  }  
+
+}
